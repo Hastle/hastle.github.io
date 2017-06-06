@@ -3,10 +3,10 @@
 	-o-transition: all .25s; 
 	transition: all .25s;
 }
-@mixin more-button {
-	color: #fff;
+@mixin common-button {
 	font-size: 13px;
 	padding: 20px 53px;
+	margin-top: 10px;
 }
 @mixin bold {
 	font-family: "GothamProBold";
@@ -106,6 +106,7 @@ button:focus {
 	height: 100vh;
 }
 h3 {
+	margin: 0 0 20px !important;
 	font-size: 22px;
 	color: $dark;
 	text-transform: uppercase;
@@ -338,6 +339,26 @@ header {
 		@include shadow;
 		h4 a {
 			color: inherit;
+		}
+	}
+}
+/*========== Progress ==========*/
+#progress {
+	background-color: #fff;
+	h3 {
+		font-size: 17px;
+		margin: 20px 0 !important;
+	}
+	.offer {
+		@include common-button;
+		@include medium;
+		color: #000000;
+		border: 1px solid $dark;
+		text-transform: uppercase;
+		&:hover {
+			background-color: $dark;
+			color: #fff;
+			@include flow;
 		}
 	}
 }

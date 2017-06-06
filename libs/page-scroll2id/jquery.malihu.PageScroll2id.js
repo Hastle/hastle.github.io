@@ -1,21 +1,4 @@
 /*Документация http://manos.malihu.gr/page-scroll-to-id/ */
-(function($){
-	$(window).on("load",function(){
-
-		/* Page Scroll to id fn call */
-		$(".top_mnu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
-			highlightSelector:".top_mnu a"
-		});
-
-			/* demo functions */
-		$("a[rel='next']").click(function(e){
-			e.preventDefault();
-			var to=$(this).parent().parent("section").next().attr("id");
-			$.mPageScroll2id("scrollTo",to);
-		});
-
-	});
-})(jQuery);
 
 ;(function($,window,document,undefined){
 	
