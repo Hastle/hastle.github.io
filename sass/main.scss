@@ -303,14 +303,11 @@ header {
 		padding: 0;
 		list-style: none;
 	}
-	p {
+	.indent>p {
 		text-indent: 20px
 	}
 	#technologies {
 		text-align: center;
-		p {
-			text-indent: 0;
-		}
 	}
 }
 /*========== Lockup ==========*/
@@ -328,7 +325,7 @@ header {
 		margin: 0;
 	}
 	.other {
-		position: relative;
+		position: absolute;
 		height: 175px;
 		width: 33%;
 		margin-top: -87px;
@@ -338,11 +335,25 @@ header {
 
 	}
 }
+/*========== Price ==========*/
+#price {
+	background-color: #f7f7f7;
+	.ticket {
+		padding: 20px;
+		margin: 15px 0;
+		box-shadow: 0 0 10px 2.4px rgba(32, 32, 32, 0.1);
+	}
+}
 /*========== Advantage ==========*/
 #advantage {
 	height: 100vh;
 	h3,p {
 		color: #fff;
+	}
+	.preset {
+		display: inline-block;
+		width: 100%;
+		padding-top: 100px;
 	}
 }
 /*========== Portfolio ==========*/
@@ -364,6 +375,9 @@ header {
 	h3 {
 		font-size: 17px;
 		margin: 20px 0 !important;
+	}
+	p {
+		text-indent: 20px;
 	}
 	.offer {
 		@include common-button;

@@ -301,14 +301,11 @@ header .review {
   padding: 0;
   list-style: none;
 }
-#about p {
+#about .indent > p {
   text-indent: 20px;
 }
 #about #technologies {
   text-align: center;
-}
-#about #technologies p {
-  text-indent: 0;
 }
 
 /*========== Lockup ==========*/
@@ -326,12 +323,22 @@ header .review {
   margin: 0;
 }
 #lockup .other {
-  position: relative;
+  position: absolute;
   height: 175px;
   width: 33%;
   margin-top: -87px;
   margin-left: 8%;
   top: 50%;
+}
+
+/*========== Price ==========*/
+#price {
+  background-color: #f7f7f7;
+}
+#price .ticket {
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 0 10px 2.4px rgba(32, 32, 32, 0.1);
 }
 
 /*========== Advantage ==========*/
@@ -340,6 +347,11 @@ header .review {
 }
 #advantage h3, #advantage p {
   color: #fff;
+}
+#advantage .preset {
+  display: inline-block;
+  width: 100%;
+  padding-top: 100px;
 }
 
 /*========== Portfolio ==========*/
@@ -363,6 +375,9 @@ header .review {
 #progress h3 {
   font-size: 17px;
   margin: 20px 0 !important;
+}
+#progress p {
+  text-indent: 20px;
 }
 #progress .offer {
   font-size: 13px;
