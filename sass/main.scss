@@ -57,22 +57,22 @@ body {
 	font-family: "RobotoRegular", sans-serif;
 	font-size: 16px;
 }
-a {
+a,input {
 	text-decoration: none;
 	outline: none;
 	outline-style: none;
 }
-a:hover {
+a,input:hover {
 	text-decoration: none;
 	outline: none;
 	outline-style: none;
 }
-a:focus {
+a,input:focus {
 	text-decoration: none;
 	outline: none;
 	outline-style: none;
 }
-a:visited {
+a,input:visited {
 	text-decoration: none;
 	outline: none;
 	outline-style: none;
@@ -116,6 +116,19 @@ h3 {
 p {
 	font-size: 16px;
 	color: $light;
+}
+.offer {
+	@include common-button;
+	@include medium;
+	color: #000000;
+	border: 1px solid $dark;
+	text-transform: uppercase;
+	background-color: transparent;
+	&:hover {
+		background-color: $dark;
+		color: #fff;
+		@include flow;
+	}
 }
 /*========== Navigation ==========*/
 .toggle_mnu span {
@@ -294,6 +307,11 @@ header {
 		height: 54px;
 		margin-top: -27px;
 	}
+	.soc-links {
+		a{
+			background-color: $dark;
+		}
+	}
 }
 /*========== About ==========*/
 #about {
@@ -342,6 +360,10 @@ header {
 		padding: 20px;
 		margin: 15px 0;
 		box-shadow: 0 0 10px 2.4px rgba(32, 32, 32, 0.1);
+		p {
+			text-align: left;
+			text-indent: 20px;
+		}
 	}
 }
 /*========== Advantage ==========*/
@@ -378,18 +400,6 @@ header {
 	}
 	p {
 		text-indent: 20px;
-	}
-	.offer {
-		@include common-button;
-		@include medium;
-		color: #000000;
-		border: 1px solid $dark;
-		text-transform: uppercase;
-		&:hover {
-			background-color: $dark;
-			color: #fff;
-			@include flow;
-		}
 	}
 }
 /*========== Contacts ==========*/

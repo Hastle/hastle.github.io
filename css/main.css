@@ -23,25 +23,25 @@ body {
   font-size: 16px;
 }
 
-a {
+a, input {
   text-decoration: none;
   outline: none;
   outline-style: none;
 }
 
-a:hover {
+a, input:hover {
   text-decoration: none;
   outline: none;
   outline-style: none;
 }
 
-a:focus {
+a, input:focus {
   text-decoration: none;
   outline: none;
   outline-style: none;
 }
 
-a:visited {
+a, input:visited {
   text-decoration: none;
   outline: none;
   outline-style: none;
@@ -93,6 +93,24 @@ h3 {
 p {
   font-size: 16px;
   color: #999;
+}
+
+.offer {
+  font-size: 13px;
+  padding: 20px 53px;
+  margin-top: 10px;
+  font-family: "GothamProMedium";
+  color: #000000;
+  border: 1px solid #222;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+.offer:hover {
+  background-color: #222;
+  color: #fff;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
 }
 
 /*========== Navigation ==========*/
@@ -293,6 +311,9 @@ header .review {
   height: 54px;
   margin-top: -27px;
 }
+header .soc-links a {
+  background-color: #222;
+}
 
 /*========== About ==========*/
 #about ul, #about li {
@@ -340,6 +361,10 @@ header .review {
   margin: 15px 0;
   box-shadow: 0 0 10px 2.4px rgba(32, 32, 32, 0.1);
 }
+#price .ticket p {
+  text-align: left;
+  text-indent: 20px;
+}
 
 /*========== Advantage ==========*/
 #advantage {
@@ -378,22 +403,6 @@ header .review {
 }
 #progress p {
   text-indent: 20px;
-}
-#progress .offer {
-  font-size: 13px;
-  padding: 20px 53px;
-  margin-top: 10px;
-  font-family: "GothamProMedium";
-  color: #000000;
-  border: 1px solid #222;
-  text-transform: uppercase;
-}
-#progress .offer:hover {
-  background-color: #222;
-  color: #fff;
-  -webkit-transition: all .25s;
-  -o-transition: all .25s;
-  transition: all .25s;
 }
 
 /*========== Contacts ==========*/
