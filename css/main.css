@@ -29,19 +29,19 @@ a, input {
   outline-style: none;
 }
 
-a, input:hover {
+a:hover {
   text-decoration: none;
   outline: none;
   outline-style: none;
 }
 
-a, input:focus {
+a:focus {
   text-decoration: none;
   outline: none;
   outline-style: none;
 }
 
-a, input:visited {
+a:visited {
   text-decoration: none;
   outline: none;
   outline-style: none;
@@ -114,6 +114,32 @@ p {
 }
 
 /*========== Navigation ==========*/
+.soc-links {
+  position: absolute;
+  display: inline-block;
+  -webkit-animation-duration: 0.01s;
+  animation-duration: 0.01s;
+}
+.soc-links a {
+  padding: 10px 10px;
+}
+.soc-links a .fa {
+  color: #fff;
+  font-size: 23px;
+}
+.soc-links a:nth-child(1) {
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+}
+.soc-links a:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.soc-links a:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
 .toggle_mnu span {
   display: block;
 }
@@ -311,9 +337,6 @@ header .review {
   height: 54px;
   margin-top: -27px;
 }
-header .soc-links a {
-  background-color: #222;
-}
 
 /*========== About ==========*/
 #about ul, #about li {
@@ -403,6 +426,9 @@ header .soc-links a {
 }
 #progress p {
   text-indent: 20px;
+}
+#progress span p {
+  text-align: center;
 }
 
 /*========== Contacts ==========*/

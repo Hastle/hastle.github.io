@@ -23,8 +23,11 @@
 @mixin karring {
 	letter-spacing: .20454545em
 }
-@mixin shadow {
+@mixin light-shadow {
 	box-shadow: 0 0 10px 2.4px rgba(32, 32, 32, 0.1);
+}
+@mixin bold-shadow {
+	box-shadow: 0px 5px 50px rgba(0,0,0,0.2);
 }
 $dark: #222;
 $light: #999;
@@ -62,17 +65,17 @@ a,input {
 	outline: none;
 	outline-style: none;
 }
-a,input:hover {
+a:hover {
 	text-decoration: none;
 	outline: none;
 	outline-style: none;
 }
-a,input:focus {
+a:focus {
 	text-decoration: none;
 	outline: none;
 	outline-style: none;
 }
-a,input:visited {
+a:visited {
 	text-decoration: none;
 	outline: none;
 	outline-style: none;
@@ -131,6 +134,31 @@ p {
 	}
 }
 /*========== Navigation ==========*/
+.soc-links {
+	position: absolute;
+	display: inline-block;
+	-webkit-animation-duration: 0.01s;
+	animation-duration: 0.01s;
+	a {
+		padding: 10px 10px;
+		.fa {
+			color: #fff;
+			font-size: 23px;
+		}
+	}
+	a:nth-child(1) {
+		-webkit-animation-delay: 0;
+		animation-delay: 0; 
+	}
+	a:nth-child(2) {
+		-webkit-animation-delay: 0.1s;
+		animation-delay: 0.1s; 
+	}
+	a:nth-child(3) {
+		-webkit-animation-delay: 0.2s;
+		animation-delay: 0.2s; 
+	}
+}
 .toggle_mnu span {
 	display: block;
 }
@@ -307,11 +335,6 @@ header {
 		height: 54px;
 		margin-top: -27px;
 	}
-	.soc-links {
-		a{
-			background-color: $dark;
-		}
-	}
 }
 /*========== About ==========*/
 #about {
@@ -349,8 +372,6 @@ header {
 		margin-top: -87px;
 		margin-left: 8%;
 		top: 50%;
-		
-
 	}
 }
 /*========== Price ==========*/
@@ -359,7 +380,7 @@ header {
 	.ticket {
 		padding: 20px;
 		margin: 15px 0;
-		box-shadow: 0 0 10px 2.4px rgba(32, 32, 32, 0.1);
+		@include light-shadow;
 		p {
 			text-align: left;
 			text-indent: 20px;
@@ -385,7 +406,7 @@ header {
 		background-color: #fff;
 		padding: 20px;
 		margin: 15px 0;
-		@include shadow;
+		@include light-shadow;
 		h4 a {
 			color: inherit;
 		}
@@ -401,9 +422,13 @@ header {
 	p {
 		text-indent: 20px;
 	}
+	span p {
+		text-align: center;
+	}
 }
 /*========== Contacts ==========*/
 
 #contacts {
 	height: 100vh;
+
 }
