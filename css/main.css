@@ -1,29 +1,9 @@
-*::-webkit-input-placeholder {
-  color: #666;
-  opacity: 1;
-}
-
-*:-moz-placeholder {
-  color: #666;
-  opacity: 1;
-}
-
-*::-moz-placeholder {
-  color: #666;
-  opacity: 1;
-}
-
-*:-ms-input-placeholder {
-  color: #666;
-  opacity: 1;
-}
-
 body {
   font-family: "RobotoRegular", sans-serif;
   font-size: 16px;
 }
 
-a, input {
+a, input, textarea {
   text-decoration: none;
   outline: none;
   outline-style: none;
@@ -360,7 +340,7 @@ header .review {
   color: #fff;
 }
 #lockup p {
-  color: #999;
+  color: #bebebf;
 }
 #lockup .col-md-12 {
   padding: 0;
@@ -410,7 +390,7 @@ header .review {
   background-color: #fff;
   padding: 20px;
   margin: 15px 0;
-  box-shadow: 0 0 10px 2.4px rgba(32, 32, 32, 0.1);
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.2);
 }
 #portfolio .cards h4 a {
   color: inherit;
@@ -434,4 +414,113 @@ header .review {
 /*========== Contacts ==========*/
 #contacts {
   height: 100vh;
+}
+#contacts h3 {
+  color: #fff;
+}
+#contacts .row {
+  padding: 150px 0;
+}
+#contacts .budge {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+#contacts .budge:hover {
+  border: 1px solid #999;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+#contacts .budge h4 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.20455em;
+  font-family: "GothamProBold";
+}
+#contacts .budge a {
+  color: #fff;
+}
+#contacts .budge a:hover {
+  text-decoration: underline;
+}
+#contacts #feedback {
+  color: #fff;
+}
+#contacts #feedback textarea {
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 12px 20px;
+  display: inline-block;
+  resize: none;
+  overflow: auto;
+  font-family: "GothamProMedium";
+}
+#contacts #feedback textarea:focus {
+  border: 1px solid #999;
+}
+#contacts #feedback .form-ent {
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 12px 20px;
+  display: inline-block;
+  font-family: "GothamProMedium";
+}
+#contacts #feedback .form-ent:focus {
+  border: 1px solid #999;
+}
+#contacts #feedback .contact-btn {
+  font-size: 13px;
+  padding: 20px 53px;
+  margin-top: 10px;
+  font-family: "GothamProMedium";
+  color: #fff;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  background-color: transparent;
+  display: inline-block;
+  float: left;
+  margin: 0 10px;
+}
+#contacts #feedback .contact-btn:hover {
+  background-color: #fff;
+  color: #222;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+#contacts #feedback .contact-btn:last-child {
+  float: right;
+}
+
+/*========== Placeholder ==========*/
+*::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+  font-family: "GothamProMedium";
+}
+
+*:-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+  font-family: "GothamProMedium";
+}
+
+*::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+  font-family: "GothamProMedium";
+}
+
+*:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+  font-family: "GothamProMedium";
 }

@@ -17,6 +17,25 @@
 	margin-left: 0 !important;
 	padding: 0 10px;
 }
+#about h3 {
+	margin: 20px 0 !important;
+}
+#price .offer {
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+}
+#advantage {
+	height: auto;
+	padding: 250px 0;
+}
+#contacts .row {
+	padding-top: 30px;
+	padding-bottom: 0;
+}
+#feedback {
+	margin-top: 20px;
+}
 }
 
 /* Extra Small Devices, Phones */

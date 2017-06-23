@@ -29,24 +29,9 @@
 @mixin bold-shadow {
 	box-shadow: 0px 5px 50px rgba(0,0,0,0.2);
 }
+
 $dark: #222;
 $light: #999;
-*::-webkit-input-placeholder {
-	color: #666;
-	opacity: 1;
-}
-*:-moz-placeholder {
-	color: #666;
-	opacity: 1;
-}
-*::-moz-placeholder {
-	color: #666;
-	opacity: 1;
-}
-*:-ms-input-placeholder {
-	color: #666;
-	opacity: 1;
-}
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -60,7 +45,7 @@ body {
 	font-family: "RobotoRegular", sans-serif;
 	font-size: 16px;
 }
-a,input {
+a,input,textarea {
 	text-decoration: none;
 	outline: none;
 	outline-style: none;
@@ -359,7 +344,7 @@ header {
 		color: #fff;
 	}
 	p {
-		color: $light;
+		color: #bebebf;
 	}
 	.col-md-12 {
 		padding: 0;
@@ -406,7 +391,7 @@ header {
 		background-color: #fff;
 		padding: 20px;
 		margin: 15px 0;
-		@include light-shadow;
+		@include bold-shadow;
 		h4 a {
 			color: inherit;
 		}
@@ -430,5 +415,105 @@ header {
 
 #contacts {
 	height: 100vh;
+	h3 {
+		color: #fff;
+	}
+	.row {
+		padding: 150px 0;
+	}
+	.budge {
+		display: inline-block;
+		width: 100%;
+		border: 1px solid #fff;
+		padding: 20px;
+		margin-bottom: 10px;
+		&:hover {
+			border: 1px solid $light;
+			@include flow;
+		}
+		h4 {
+			color: #fff;
+			text-transform: uppercase;
+			text-align: center;
+			@include karring;
+			@include bold;
+		}
+		a {
+			color: #fff;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	#feedback {
+		color: #fff;
+		textarea {
+			width: 100%;
+			font-size: 14px;
+			border: 1px solid #fff;
+			background-color: transparent;
+			padding: 12px 20px;
+			display: inline-block;
+			resize: none;
+			overflow: auto;
+			@include medium;
+			&:focus {
+				border: 1px solid $light;
+			}
+		}
+		.form-ent {
+			width: 100%;
+			font-size: 14px;
+			border: 1px solid #fff;
+			background-color: transparent;
+			padding: 12px 20px;
+			display: inline-block;
+			@include medium;
+			&:focus {
+				border: 1px solid $light;
+			}
+		}
+		.contact-btn {
+			@include common-button;
+			@include medium;
+			color: #fff;
+			border: 1px solid #fff;
+			text-transform: uppercase;
+			background-color: transparent;
+			display: inline-block;
+			float: left;
+			margin: 0 10px;
+			&:hover {
+				background-color: #fff;
+				color: $dark;
+				@include flow;
+			}
+			&:last-child {
+				float: right;
+			}
+		}
+	}
+}
 
+/*========== Placeholder ==========*/
+
+*::-webkit-input-placeholder {
+	color: #fff;
+	opacity: 1;
+	@include medium;
+}
+*:-moz-placeholder {
+	color: #fff;
+	opacity: 1;
+	@include medium;
+}
+*::-moz-placeholder {
+	color: #fff;
+	opacity: 1;
+	@include medium;
+}
+*:-ms-input-placeholder {
+	color: #fff;
+	opacity: 1;
+	@include medium;
 }
