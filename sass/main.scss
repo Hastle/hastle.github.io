@@ -318,7 +318,7 @@ header {
 		position: relative;
 		top: 45%;
 		height: 54px;
-		margin-top: -27px;
+		margin: -27px 10px 0;
 	}
 }
 /*========== About ==========*/
@@ -420,6 +420,14 @@ header {
 	}
 	.row {
 		padding: 150px 0;
+	}
+	.info {
+		position: absolute;
+		display: inline-block;
+		bottom: 0;
+		width: 180px;
+		left: 50%;
+		margin-left: -90px;
 	}
 	.budge {
 		display: inline-block;

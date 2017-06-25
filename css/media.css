@@ -36,11 +36,17 @@
 #feedback {
 	margin-top: 20px;
 }
+#contacts {
+	height: 100%;
+	overflow: auto;
+}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+#advantage {
+	padding: 30px;
+}
 }
 
 /* Custom, iPhone Retina */
