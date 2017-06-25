@@ -29,6 +29,9 @@
 	height: auto;
 	padding: 250px 0;
 }
+#advantage .preset {
+	padding: 0;
+}
 #contacts .row {
 	padding-top: 30px;
 	padding-bottom: 0;
@@ -45,7 +48,7 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 #advantage {
-	padding: 30px;
+	padding: 60px 30px;
 }
 }
 
