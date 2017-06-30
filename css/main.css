@@ -97,8 +97,11 @@ p {
 .soc-links {
   position: absolute;
   display: inline-block;
-  -webkit-animation-duration: 0.01s;
-  animation-duration: 0.01s;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  left: 50%;
+  margin-left: -65px;
+  bottom: 20px;
 }
 .soc-links a {
   padding: 10px 10px;
@@ -458,6 +461,18 @@ header .review {
 }
 #contacts #feedback {
   color: #fff;
+}
+#contacts #feedback :focus::-webkit-input-placeholder {
+  color: transparent;
+}
+#contacts #feedback :focus::-moz-placeholder {
+  color: transparent;
+}
+#contacts #feedback :focus:-moz-placeholder {
+  color: transparent;
+}
+#contacts #feedback :focus:-ms-input-placeholder {
+  color: transparent;
 }
 #contacts #feedback textarea {
   width: 100%;

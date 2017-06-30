@@ -122,8 +122,11 @@ p {
 .soc-links {
 	position: absolute;
 	display: inline-block;
-	-webkit-animation-duration: 0.01s;
-	animation-duration: 0.01s;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease; 
+	left: 50%;
+	margin-left: -65px;
+	bottom: 20px;
 	a {
 		padding: 10px 10px;
 		.fa {
@@ -456,6 +459,10 @@ header {
 	}
 	#feedback {
 		color: #fff;
+		:focus::-webkit-input-placeholder {color: transparent}
+		:focus::-moz-placeholder {color: transparent}
+		:focus:-moz-placeholder {color: transparent}
+		:focus:-ms-input-placeholder {color: transparent}
 		textarea {
 			width: 100%;
 			font-size: 14px;
