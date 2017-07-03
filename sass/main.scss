@@ -390,6 +390,9 @@ header {
 /*========== Portfolio ==========*/
 #portfolio {
 	background-color: #f7f7f7;
+	a {
+		color: $dark;
+	}
 	.cards {
 		background-color: #fff;
 		padding: 20px;

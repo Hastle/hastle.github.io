@@ -389,6 +389,9 @@ header .review {
 #portfolio {
   background-color: #f7f7f7;
 }
+#portfolio a {
+  color: #222;
+}
 #portfolio .cards {
   background-color: #fff;
   padding: 20px;
