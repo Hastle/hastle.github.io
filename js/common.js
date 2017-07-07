@@ -27,7 +27,7 @@ $(document).ready(function() {
 });
 $(document).ready(function() {
 
-	$(".top_mnu ul a").mPageScroll2id();
+	$(".top_mnu ul a,.scroll").mPageScroll2id();
 
 	$(".toggle_mnu").click(function() {
 		$(".sandwich").toggleClass("active");

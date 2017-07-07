@@ -46,6 +46,16 @@
 #advantage {
 	padding: 60px 30px;
 }
+#feedback {
+	padding: 0 15px;
+}
+#contacts #feedback .contact-btn {
+	padding: 15px 30px;
+	margin: 10px 0;
+}
+#progress {
+	padding-top: 0;
+}
 }
 
 /* Custom, iPhone Retina */

@@ -33,14 +33,6 @@
 $dark: #222;
 $light: #999;
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-	
-}
-body input:required:valid,
-body textarea:required:valid {
-	
-}
 body {
 	font-family: "RobotoRegular", sans-serif;
 	font-size: 16px;
@@ -108,6 +100,7 @@ p {
 .offer {
 	@include common-button;
 	@include medium;
+	display: inline-block;
 	color: #000000;
 	border: 1px solid $dark;
 	text-transform: uppercase;
@@ -435,6 +428,9 @@ header {
 		width: 180px;
 		left: 50%;
 		margin-left: -90px;
+		p {
+			color: #fff;
+		}
 	}
 	.budge {
 		display: inline-block;
@@ -462,10 +458,6 @@ header {
 	}
 	#feedback {
 		color: #fff;
-		:focus::-webkit-input-placeholder {color: transparent}
-		:focus::-moz-placeholder {color: transparent}
-		:focus:-moz-placeholder {color: transparent}
-		:focus:-ms-input-placeholder {color: transparent}
 		textarea {
 			width: 100%;
 			font-size: 14px;
@@ -515,6 +507,11 @@ header {
 }
 
 /*========== Placeholder ==========*/
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder {color: transparent}
+:focus:-moz-placeholder {color: transparent}
+:focus:-ms-input-placeholder {color: transparent}
 
 *::-webkit-input-placeholder {
 	color: #fff;

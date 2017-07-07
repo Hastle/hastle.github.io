@@ -80,6 +80,7 @@ p {
   padding: 20px 53px;
   margin-top: 10px;
   font-family: "GothamProMedium";
+  display: inline-block;
   color: #000000;
   border: 1px solid #222;
   text-transform: uppercase;
@@ -436,6 +437,9 @@ header .review {
   left: 50%;
   margin-left: -90px;
 }
+#contacts .info p {
+  color: #fff;
+}
 #contacts .budge {
   display: inline-block;
   width: 100%;
@@ -464,18 +468,6 @@ header .review {
 }
 #contacts #feedback {
   color: #fff;
-}
-#contacts #feedback :focus::-webkit-input-placeholder {
-  color: transparent;
-}
-#contacts #feedback :focus::-moz-placeholder {
-  color: transparent;
-}
-#contacts #feedback :focus:-moz-placeholder {
-  color: transparent;
-}
-#contacts #feedback :focus:-ms-input-placeholder {
-  color: transparent;
 }
 #contacts #feedback textarea {
   width: 100%;
@@ -528,6 +520,22 @@ header .review {
 }
 
 /*========== Placeholder ==========*/
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
 *::-webkit-input-placeholder {
   color: #fff;
   opacity: 1;
