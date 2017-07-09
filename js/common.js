@@ -24,9 +24,6 @@ $(document).ready(function() {
 		clearIfNotMatch: true
 	});
 
-});
-$(document).ready(function() {
-
 	$(".top_mnu ul a,.scroll").mPageScroll2id();
 
 	$(".toggle_mnu").click(function() {
