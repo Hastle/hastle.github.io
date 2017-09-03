@@ -15,22 +15,26 @@ body {
 a, input, textarea {
   text-decoration: none;
   outline: none;
-  outline-style: none; }
+  outline-style: none;
+  color: inherit; }
 
 a:hover {
   text-decoration: none;
   outline: none;
-  outline-style: none; }
+  outline-style: none;
+  color: inherit; }
 
 a:focus {
   text-decoration: none;
   outline: none;
-  outline-style: none; }
+  outline-style: none;
+  color: inherit; }
 
 a:visited {
   text-decoration: none;
   outline: none;
-  outline-style: none; }
+  outline-style: none;
+  color: inherit; }
 
 section {
   display: block;
@@ -67,6 +71,9 @@ h3 {
   color: #222;
   text-transform: uppercase;
   letter-spacing: .20454545em; }
+
+h4 {
+  font-size: 16px; }
 
 p {
   font-size: 16px;
