@@ -487,6 +487,57 @@ header {
   right: 0;
   top: 0;
   display: none; }
+  .overlay .btn-close {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    padding: 10px; }
+    .overlay .btn-close .mid-close {
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 200; }
+    .overlay .btn-close .left-close, .overlay .btn-close .right-close {
+      display: inline-block;
+      position: absolute;
+      width: 28px;
+      height: 3px;
+      top: 11.6px;
+      background: white;
+      border: none;
+      -webkit-border-radius: 4px;
+              border-radius: 4px; }
+    .overlay .btn-close .left-close {
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .overlay .btn-close .right-close {
+      -webkit-transform: rotate(135deg);
+          -ms-transform: rotate(135deg);
+              transform: rotate(135deg); }
+    .overlay .btn-close:hover .left-close {
+      -webkit-transform: rotate(225deg);
+          -ms-transform: rotate(225deg);
+              transform: rotate(225deg);
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+    .overlay .btn-close:hover .right-close {
+      -webkit-transform: rotate(315deg);
+          -ms-transform: rotate(315deg);
+              transform: rotate(315deg);
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
   .overlay .modal-content {
     display: inline-block;
     height: auto;

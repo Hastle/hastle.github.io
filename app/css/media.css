@@ -10,8 +10,10 @@
 }
 @media only screen and (max-width:480px){#advantage{padding:60px 30px;}
 #feedback{padding:0 15px;}
-#contacts #feedback .contact-btn{padding:15px 30px;margin:10px 0;}
+#contacts #feedback .contact-btn{padding:15px 16px;margin:10px 0;}
 #progress{padding-top:0;}
+#price .col-sm-4,#portfolio .col-sm-6{padding-left:0;padding-right:0;}
+.top_mnu ul{margin-top:150px !important;}
 }
 @media only screen and (max-width:320px){}
 @media only screen and (min-width:320px){}

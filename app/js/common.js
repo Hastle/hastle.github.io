@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	new WOW().init();
+
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
 	$("form").submit(function() {
@@ -32,6 +34,14 @@ $(document).ready(function() {
 		$(".top_mnu").fadeOut(600);
 		$(".sandwich").toggleClass("active");
 	}).append("<span>");
+
+	$(".btn-close,.offer").click(function() {
+		if ($(".overlay").is(":visible")) {
+			$(".overlay").fadeOut(300);
+		} else {
+			$(".overlay").fadeIn(300);		
+		};
+	});
 
 	$(".toggle_mnu").click(function() {
 		if ($(".top_mnu").is(":visible")) {
