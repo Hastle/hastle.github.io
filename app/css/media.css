@@ -1,5 +1,5 @@
 @media only screen and (max-width:1200px){}
-@media only screen and (max-width:992px){}
+@media only screen and (max-width:992px){#portfolio .col-sm-6:nth-child(even){clear: both;}}
 @media only screen and (max-width:768px){.other{width:100% !important;margin-left:0 !important;padding:0 10px;}
 #about h3{margin:20px 0 !important;}
 #price .offer{padding-left:0;padding-right:0;width:100%;}
