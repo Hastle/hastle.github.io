@@ -51,6 +51,4 @@ $(document).ready(function() {
 		};
 	});
 
-	$(".cbalink").addClass("hidden");
-
 });
