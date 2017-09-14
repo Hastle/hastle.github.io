@@ -35,9 +35,9 @@ $(document).ready(function() {
 
 	$(".btn-close,.offer").click(function() {
 		if ($(".overlay").is(":visible")) {
-			$(".overlay").fadeOut(300);
+			$(".overlay").fadeOut(400);
 		} else {
-			$(".overlay").fadeIn(300);		
+			$(".overlay").fadeIn(400);		
 		};
 	});
 
