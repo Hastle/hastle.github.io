@@ -102,9 +102,9 @@ p {
 .soc-links {
   position: absolute;
   display: inline-block;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
   left: 50%;
   margin-left: -65px;
   bottom: 20px; }
@@ -350,8 +350,8 @@ header {
   #price .ticket {
     padding: 20px;
     margin: 15px 0;
-    -webkit-box-shadow: 0 0 10px 2.4px rgba(32, 32, 32, 0.1);
-            box-shadow: 0 0 10px 2.4px rgba(32, 32, 32, 0.1); }
+    -webkit-box-shadow: 0 50px 60px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: 0 50px 60px 0 rgba(0, 0, 0, 0.25); }
     #price .ticket p {
       text-align: left;
       text-indent: 20px; }
