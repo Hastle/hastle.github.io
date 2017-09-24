@@ -35,9 +35,11 @@ $(document).ready(function() {
 
 	$(".btn-close,.offer").click(function() {
 		if ($(".overlay").is(":visible")) {
-			$(".overlay").fadeOut(400);
+			$(".overlay").fadeOut(600);
+			$(".btn-close").addClass("active");
 		} else {
-			$(".overlay").fadeIn(400);		
+			$(".overlay").fadeIn(600);
+			$(".btn-close").removeClass("active");		
 		};
 	});
 

@@ -524,14 +524,14 @@ header {
       -webkit-transform: rotate(135deg);
           -ms-transform: rotate(135deg);
               transform: rotate(135deg); }
-    .overlay .btn-close:hover .left-close {
+    .overlay .btn-close.active .left-close {
       -webkit-transform: rotate(225deg);
           -ms-transform: rotate(225deg);
               transform: rotate(225deg);
       -webkit-transition: all .25s;
       -o-transition: all .25s;
       transition: all .25s; }
-    .overlay .btn-close:hover .right-close {
+    .overlay .btn-close.active .right-close {
       -webkit-transform: rotate(315deg);
           -ms-transform: rotate(315deg);
               transform: rotate(315deg);
