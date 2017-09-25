@@ -66,8 +66,7 @@ h4
 p 
 	font-size: 16px
 	color: $light
-.offer
-	cursor: pointer
+.offer 
 	+common-button
 	+medium
 	display: inline-block
@@ -75,6 +74,7 @@ p
 	border: 1px solid $dark
 	text-transform: uppercase
 	background-color: transparent
+	cursor: pointer
 	&:hover 
 		background-color: $dark
 		color: #fff
@@ -251,9 +251,9 @@ header
 		+italic	
 	.review 
 		position: relative
-		height: 100vh
-		align-content: center
-		display: grid
+		top: 45%
+		height: 54px
+		margin: -27px 10px 0	
 /*========== About ==========*/
 #about 
 	ul,li 
@@ -278,12 +278,12 @@ header
 		padding: 0
 		margin: 0	
 	.other 
-		position: relative
-		display: grid
-		height: 100vh
-		align-content: center
+		position: absolute
+		height: 175px
 		width: 33%
+		margin-top: -87px
 		margin-left: 8%
+		top: 50%	
 /*========== Price ==========*/
 #price 
 	background-color: #f7f7f7
@@ -413,6 +413,7 @@ header
 	right: 0
 	top: 0
 	display: none
+	z-index: 200
 	.btn-close
 		display: inline-block
 		position: relative

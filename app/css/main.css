@@ -491,7 +491,8 @@ header {
   z-index: 50;
   right: 0;
   top: 0;
-  display: none; }
+  display: none;
+  z-index: 200; }
   .overlay .btn-close {
     display: inline-block;
     position: relative;
