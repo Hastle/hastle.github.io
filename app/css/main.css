@@ -299,7 +299,6 @@ p {
 header {
   height: 100vh;
   display: block;
-  display: block;
   position: relative; }
   header h3 {
     font-family: "GothamProMedium"; }
@@ -457,100 +456,180 @@ header {
     outline: none; }
     #feedback .form-ent:focus, #feedback select:focus {
       border: 1px solid #999; }
-  #feedback .contact-btn {
-    font-size: 13px;
-    padding: 20px 53px;
-    margin-top: 10px;
-    font-family: "GothamProMedium";
-    color: #fff;
-    border: 1px solid #fff;
-    text-transform: uppercase;
-    background-color: transparent;
-    display: inline-block;
-    float: left;
-    margin: 0 10px; }
-    #feedback .contact-btn:hover {
-      background-color: #fff;
-      color: #222;
-      -webkit-transition: all .25s;
-      -o-transition: all .25s;
-      transition: all .25s; }
-    #feedback .contact-btn:last-child {
-      float: right; }
+
+.contact-btn {
+  font-size: 13px;
+  padding: 20px 53px;
+  margin-top: 10px;
+  font-family: "GothamProMedium";
+  color: #fff;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  background-color: transparent;
+  display: inline-block;
+  float: left;
+  margin: 0 10px; }
+  .contact-btn:hover {
+    background-color: #fff;
+    color: #222;
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
+  .contact-btn:last-child {
+    float: right; }
 
 /*========== Modal ==========*/
-.overlay {
-  position: fixed;
+#pans-modal #feedback {
+  color: #222;
+  display: inline-block;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-  z-index: 50;
-  right: 0;
-  top: 0;
-  display: none;
-  z-index: 200; }
-  .overlay .btn-close {
-    display: inline-block;
-    position: relative;
-    top: 20px;
-    left: 20px;
-    height: 60px;
-    width: 60px;
-    cursor: pointer;
-    padding: 10px; }
-    .overlay .btn-close .mid-close {
-      width: 28px;
-      height: 28px;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      z-index: 200; }
-    .overlay .btn-close .left-close, .overlay .btn-close .right-close {
-      display: inline-block;
-      position: absolute;
-      width: 28px;
-      height: 3px;
-      top: 11.6px;
-      background: white;
-      border: none;
-      -webkit-border-radius: 4px;
-              border-radius: 4px; }
-    .overlay .btn-close .left-close {
-      -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-              transform: rotate(45deg); }
-    .overlay .btn-close .right-close {
-      -webkit-transform: rotate(135deg);
-          -ms-transform: rotate(135deg);
-              transform: rotate(135deg); }
-    .overlay .btn-close.active .left-close {
-      -webkit-transform: rotate(225deg);
-          -ms-transform: rotate(225deg);
-              transform: rotate(225deg);
-      -webkit-transition: all .25s;
-      -o-transition: all .25s;
-      transition: all .25s; }
-    .overlay .btn-close.active .right-close {
-      -webkit-transform: rotate(315deg);
-          -ms-transform: rotate(315deg);
-              transform: rotate(315deg);
-      -webkit-transition: all .25s;
-      -o-transition: all .25s;
-      transition: all .25s; }
-  .overlay .modal-content {
-    display: inline-block;
-    height: auto;
-    position: relative;
-    top: 150px;
-    width: 100%; }
-  .overlay #feedback .contact-btn {
-    float: left;
-    margin: 0 17px 0 0; }
-  .overlay #feedback option {
-    background-color: #eee;
-    outline: none;
-    cursor: pointer;
-    color: #222; }
+   }
+#pans-modal #feedback::-webkit-input-placeholder {
+  color: #222;
+  opacity: 1;
+  font-family: "GothamProMedium";
+}
+#pans-modal #feedback:-moz-placeholder {
+  color: #222;
+  opacity: 1;
+  font-family: "GothamProMedium";
+}
+#pans-modal #feedback::-moz-placeholder {
+  color: #222;
+  opacity: 1;
+  font-family: "GothamProMedium";
+}
+#pans-modal #feedback:-ms-input-placeholder {
+  color: #222;
+  opacity: 1;
+  font-family: "GothamProMedium";
+}
+  #pans-modal #feedback textarea {
+    border: 1px solid #999; }
+    #pans-modal #feedback textarea:focus {
+      border: 1px solid #222; }
+  #pans-modal #feedback .form-ent, #pans-modal #feedback select {
+    color: #222;
+    border: 1px solid #999; }
+    #pans-modal #feedback .form-ent:focus, #pans-modal #feedback select:focus {
+      border: 1px solid #222; }
+  #pans-modal #feedback .contact-btn {
+    border-color: #222;
+    margin: 0 0 0 10px;
+    float: right; }
+
+/*==========  Magnific Popup  ==========*/
+.white-popup-block {
+  background: #FFF;
+  padding: 50px;
+  text-align: left;
+  max-width: 650px;
+  margin: 40px auto;
+  position: relative; }
+  .white-popup-block h1 {
+    margin: 30px 0;
+    font-size: 30px; }
+  .white-popup-block img {
+    margin-top: 1em; }
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-out;
+  -o-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out; }
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8; }
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; }
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-out;
+  -o-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out; }
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1; }
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0; }
+
+.mfp-ready .mfp-figure {
+  opacity: 0; }
+
+.mfp-zoom-in .mfp-figure, .mfp-zoom-in .mfp-iframe-holder .mfp-iframe-scaler {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95); }
+
+.mfp-zoom-in.mfp-bg, .mfp-zoom-in .mfp-preloader {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+.mfp-zoom-in.mfp-image-loaded .mfp-figure {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1); }
+
+.mfp-zoom-in.mfp-ready .mfp-iframe-holder .mfp-iframe-scaler {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1); }
+
+.mfp-zoom-in.mfp-ready.mfp-bg, .mfp-zoom-in.mfp-ready .mfp-preloader {
+  opacity: 0.8; }
+
+.mfp-zoom-in.mfp-removing .mfp-figure, .mfp-zoom-in.mfp-removing .mfp-iframe-holder .mfp-iframe-scaler {
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: 0; }
+
+.mfp-zoom-in.mfp-removing.mfp-bg, .mfp-zoom-in.mfp-removing .mfp-preloader {
+  opacity: 0; }
+
+.mfp-iframe-scaler {
+  overflow: visible; }
+
+.mfp-zoom-out-cur {
+  cursor: auto; }
+  .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    cursor: pointer; }
+
+.mfp-preloader {
+  width: 30px;
+  height: 30px;
+  background-color: #FFF;
+  opacity: 0.65;
+  margin: 0 auto;
+  -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+          animation: rotateplane 1.2s infinite ease-in-out; }
+
+@-webkit-keyframes rotateplane {
+  0% {
+    -webkit-transform: perspective(120px); }
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg); }
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg); } }
+
+@keyframes rotateplane {
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }

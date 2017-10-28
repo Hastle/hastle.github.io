@@ -33,6 +33,7 @@ var jsfiles = [
 	'app/libs/page-scroll2id/jquery.malihu.PageScroll2id.js',
 	'app/libs/wow/wow.js',
 	'app/libs/jquery-mask-plugin/src/jquery.mask.js',
+	'app/libs/magnific-popup/jquery.magnific-popup.min.js',
 	'app/libs/waypoints/waypoints-1.6.2.min.js'
 ];
 

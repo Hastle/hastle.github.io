@@ -1,4 +1,6 @@
-# Список расширений для .gitignore
 *.zip
 *.psd
 *.exe
+
+# Folders to ignore
+node_modules
