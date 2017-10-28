@@ -482,28 +482,7 @@ header {
 #pans-modal #feedback {
   color: #222;
   display: inline-block;
-  width: 100%;
-   }
-#pans-modal #feedback::-webkit-input-placeholder {
-  color: #222;
-  opacity: 1;
-  font-family: "GothamProMedium";
-}
-#pans-modal #feedback:-moz-placeholder {
-  color: #222;
-  opacity: 1;
-  font-family: "GothamProMedium";
-}
-#pans-modal #feedback::-moz-placeholder {
-  color: #222;
-  opacity: 1;
-  font-family: "GothamProMedium";
-}
-#pans-modal #feedback:-ms-input-placeholder {
-  color: #222;
-  opacity: 1;
-  font-family: "GothamProMedium";
-}
+  width: 100%; }
   #pans-modal #feedback textarea {
     border: 1px solid #999; }
     #pans-modal #feedback textarea:focus {
@@ -516,7 +495,14 @@ header {
   #pans-modal #feedback .contact-btn {
     border-color: #222;
     margin: 0 0 0 10px;
-    float: right; }
+    float: right;
+    color: #222; }
+    #pans-modal #feedback .contact-btn:hover {
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s;
+      background-color: #222;
+      color: #fff; }
 
 /*==========  Magnific Popup  ==========*/
 .white-popup-block {
