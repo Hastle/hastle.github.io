@@ -23,42 +23,66 @@
 @media only screen and (min-width:992px){}
 @media only screen and (min-width:1200px){}
 /*========== Placeholder ==========*/
-:focus::-webkit-input-placeholder {
+#feedback :focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-:focus::-moz-placeholder {
+#feedback :focus::-moz-placeholder {
   color: transparent;
 }
 
-:focus:-moz-placeholder {
+#feedback :focus:-moz-placeholder {
   color: transparent;
 }
 
-:focus:-ms-input-placeholder {
+#feedback :focus:-ms-input-placeholder {
   color: transparent;
 }
 
-*::-webkit-input-placeholder {
+#feedback ::-webkit-input-placeholder {
   color: #fff;
   opacity: 1;
   font-family: "GothamProMedium";
 }
 
-*:-moz-placeholder {
+#feedback :-moz-placeholder {
   color: #fff;
   opacity: 1;
   font-family: "GothamProMedium";
 }
 
-*::-moz-placeholder {
+#feedback ::-moz-placeholder {
   color: #fff;
   opacity: 1;
   font-family: "GothamProMedium";
 }
 
-*:-ms-input-placeholder {
+#feedback :-ms-input-placeholder {
   color: #fff;
+  opacity: 1;
+  font-family: "GothamProMedium";
+}
+
+#pans-modal ::-webkit-input-placeholder {
+  color: #222;
+  opacity: 1;
+  font-family: "GothamProMedium";
+}
+
+#pans-modal :-moz-placeholder {
+  color: #222;
+  opacity: 1;
+  font-family: "GothamProMedium";
+}
+
+#pans-modal ::-moz-placeholder {
+  color: #222;
+  opacity: 1;
+  font-family: "GothamProMedium";
+}
+
+#pans-modal :-ms-input-placeholder {
+  color: #222;
   opacity: 1;
   font-family: "GothamProMedium";
 }
