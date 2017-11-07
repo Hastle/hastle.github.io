@@ -8,6 +8,11 @@
 .right {
   float: right; }
 
+.clearfix {
+  display: block;
+  content: "";
+  clear: both; }
+
 body {
   font-family: "RobotoRegular", sans-serif;
   font-size: 16px; }
@@ -223,15 +228,6 @@ p {
   padding: 0;
   margin: 0; }
 
-.toggle_mnu {
-  width: 60px;
-  height: 60px;
-  position: fixed;
-  z-index: 100;
-  border: none;
-  right: 20px;
-  top: 20px; }
-
 .sandwich.active .sw-topper {
   top: 9px;
   -webkit-transform: rotate(-45deg);
@@ -298,8 +294,7 @@ p {
 /*========== Header ==========*/
 header {
   height: 100vh;
-  display: block;
-  position: relative; }
+  display: block; }
   header h3 {
     font-family: "GothamProMedium"; }
   header h4 {
@@ -321,9 +316,6 @@ header {
 
 #about .indent > p {
   text-indent: 20px; }
-
-#about #technologies {
-  text-align: center; }
 
 /*========== Lockup ==========*/
 #lockup {
