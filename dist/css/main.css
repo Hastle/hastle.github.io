@@ -2,6 +2,17 @@
   padding-right: 0;
   padding-left: 0; }
 
+.row-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+
 .left {
   float: left; }
 
@@ -73,6 +84,9 @@ button:focus {
 .captch-block {
   display: block;
   margin: 0 auto 20px; }
+
+.rc-anchor-normal {
+  border: 1px solid #d3d3d3 !important; }
 
 h3 {
   text-align: center;
