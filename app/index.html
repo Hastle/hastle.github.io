@@ -243,27 +243,27 @@
 	<div id="pans-modal" class="white-popup-block mfp-hide">
 		<form id="feedback">
 			<div class="form-group">
-				<input class="form-ent" type="text" placeholder="Ваше имя" required>
+				<input class="form-ent" type="text" placeholder="Ваше имя" name="name" required>
 			</div>
 			<div class="form-group">
-				<input class="form-ent" type="email" placeholder="Ваша почта" required>
+				<input class="form-ent" type="email" placeholder="Ваша почта" name="email" required>
 			</div>
 			<div class="form-group">
 				<select name="services" required>
-					<option selected="selected">Выберите тип услуг</option>
-					<option>Landing page или визитка</option>
-					<option>Портфолио или многостраничный сайт</option>
-					<option>Интеренет магазин или блог</option>
+					<option selected="selected" value="-">Выберите тип услуг</option>
+					<option value="Landing page или визитка">Landing page или визитка</option>
+					<option value="Портфолио или многостраничный сайт">Портфолио или многостраничный сайт</option>
+					<option value="Интеренет магазин или блог">Интеренет магазин или блог</option>
 				</select>
 			</div>
 			<div class="form-group">
-				<input class="form-ent phone" type="phone" placeholder="Контактный номер">
+				<input class="form-ent phone" type="phone" name="phone" placeholder="Контактный номер">
 			</div>
 			<div class="form-group">
-				<textarea type="text" placeholder="Сообщение" rows="10" required></textarea>
+				<textarea type="text" placeholder="Сообщение" rows="10" name="text" required></textarea>
 			</div>
 			<div class="captch-block">
-				<div class="g-recaptcha" data-sitekey="6LcWJzgUAAAAAHilrfSy00AmO-lk8BolPw1VC1qN"></div>
+				<div class="g-recaptcha" data-sitekey="6LdTMjkUAAAAAB3-rHtMThrH697WJYZBeasFW10P"></div>
 			</div>
 			<button class="contact-btn" href="">Отправить</button>
 			<button class="contact-btn" type="reset">Отчистить</button>

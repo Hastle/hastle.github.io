@@ -1,6 +1,6 @@
 <?php
 
-$secret = "6LcWJzgUAAAAAHilrfSy00AmO-lk8BolPw1VC1qN";
+$secret = "6LdTMjkUAAAAAB3-rHtMThrH697WJYZBeasFW10P";
 
 $response = null;
 
@@ -107,15 +107,17 @@ class ReCaptcha
 	}
 }
 
-$recepient = "youmail@ya.ru";
-$sitename = "Название сайта";
+$recepient = "host@eger-web.ga";
+$sitename = "eger-web.ga";
 
 $name = trim($_GET["name"]);
+$email = trim($_GET["email"]);
+$services = trim($_GET["services"]);
 $phone = trim($_GET["phone"]);
 $text = trim($_GET["text"]);
 
 $pagetitle = "Новая заявка с сайта \"$sitename\"";
-$message = "Имя: $name \nТелефон: $phone \nТекст: $text";
+$message = "Имя: $name \nEmail: $email \nТелефон: $phone \nЗаказ: $services \nТекст: $text";
 mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
 
 ?>

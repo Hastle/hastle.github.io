@@ -8,13 +8,13 @@ $(document).ready(function() {
 			url: "mail.php",
 			data: $("form").serialize()
 		}).done(function() {
-			alert("Спасибо за заявку!");
+			$.magnificPopup.close();
+			alert("Ваше сообщение успешно отправено!");
 			setTimeout(function() {
 				$.fancybox.close();
 			}, 1000);
 		});
 		return false;
-
 	});
 
 	$(".phone").mask("+7(000)000-00-00", {
