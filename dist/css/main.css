@@ -139,7 +139,11 @@ p {
       color: #fff;
       font-size: 23px; }
   .soc-links a:nth-child(1) {
+<<<<<<< HEAD
     -webkit-animation-delay: 0.3s;
+=======
+    -webkit-animation-delay: 0.3;
+>>>>>>> be615abd35390a1fdb7c82afe77de3c48828fafc
     animation-delay: 0.3s; }
   .soc-links a:nth-child(2) {
     -webkit-animation-delay: 0.5s;
