@@ -8,11 +8,16 @@ $(document).ready(function() {
 			url: "mail.php",
 			data: $("form").serialize()
 		}).done(function() {
-			$.magnificPopup.close();
-			alert("Ваше сообщение успешно отправено!");
-			setTimeout(function() {
-				$.fancybox.close();
-			}, 1000);
+			var response = grecaptcha.getResponse();
+			if (response.length == 0) {
+				alert("Сообщение не отправлено, заполните captcha.")
+			} else {
+				$.magnificPopup.close();
+				alert("Ваше сообщение успешно отправено!");
+				setTimeout(function() {
+					$.fancybox.close();
+				}, 1000);
+			}
 		});
 		return false;
 	});
