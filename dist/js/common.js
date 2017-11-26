@@ -3,22 +3,22 @@ $(document).ready(function() {
 	new WOW().init();
 
 	$("form").submit(function() {
-		$.ajax({
-			type: "GET",
-			url: "mail.php",
-			data: $("form").serialize()
-		}).done(function() {
-			var response = grecaptcha.getResponse();
-			if (response.length == 0) {
-				alert("Сообщение не отправлено, заполните captcha.")
-			} else {
+		var captcha = grecaptcha.getResponse();
+		if (captcha.length == 0) {
+			alert("Не пройдена captcha, попробуйте еще раз.")
+		} else {
+			$.ajax({
+				type: "GET",
+				url: "mail.php",
+				data: $("form").serialize()
+			}).done(function() {
 				$.magnificPopup.close();
 				alert("Ваше сообщение успешно отправено!");
 				setTimeout(function() {
 					$.fancybox.close();
 				}, 1000);
-			}
-		});
+			});
+		}
 		return false;
 	});
 
