@@ -1,4 +1,4 @@
-@media only screen and (max-width:1200px){}
+@media only screen and (max-width:1200px){.contact-btn{padding:20px 40px;}}
 @media only screen and (max-width:992px){}
 @media only screen and (max-width:768px){.other{width:100% !important;margin-left:0 !important;padding:0 10px;}
 #about h3{margin:20px 0 !important;}
@@ -6,12 +6,12 @@
 #advantage{height:auto;padding:250px 0;}
 #advantage .preset{padding:0;}
 #contacts .row{padding-top:30px;padding-bottom:0;}
-#feedback{margin-top:20px;}
+#feedback-1{margin-top:20px;}
 #price .ticket{box-shadow:0px 5px 50px rgba(0,0,0,0.2);}
 }
 @media only screen and (max-width:480px){#advantage{padding:60px 30px;}
-#feedback{padding:0 15px;}
-#contacts #feedback .contact-btn{padding:15px 16px;margin:10px 0;}
+#feedback-1{padding:0 15px;}
+#contacts #feedback-1 .contact-btn{padding:15px 16px;margin:10px 0;}
 #progress{padding-top:0;}
 #price .col-sm-4,#portfolio .col-sm-6{padding-left:0;padding-right:0;}
 .top_mnu ul{margin-top:150px !important;}
@@ -23,41 +23,41 @@
 @media only screen and (min-width:992px){}
 @media only screen and (min-width:1200px){}
 /*========== Placeholder ==========*/
-#feedback :focus::-webkit-input-placeholder {
+#feedback-1 :focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-#feedback :focus::-moz-placeholder {
+#feedback-1 :focus::-moz-placeholder {
   color: transparent;
 }
 
-#feedback :focus:-moz-placeholder {
+#feedback-1 :focus:-moz-placeholder {
   color: transparent;
 }
 
-#feedback :focus:-ms-input-placeholder {
+#feedback-1 :focus:-ms-input-placeholder {
   color: transparent;
 }
 
-#feedback ::-webkit-input-placeholder {
+#feedback-1 ::-webkit-input-placeholder {
   color: #fff;
   opacity: 1;
   font-family: "GothamProMedium";
 }
 
-#feedback :-moz-placeholder {
+#feedback-1 :-moz-placeholder {
   color: #fff;
   opacity: 1;
   font-family: "GothamProMedium";
 }
 
-#feedback ::-moz-placeholder {
+#feedback-1 ::-moz-placeholder {
   color: #fff;
   opacity: 1;
   font-family: "GothamProMedium";
 }
 
-#feedback :-ms-input-placeholder {
+#feedback-1 :-ms-input-placeholder {
   color: #fff;
   opacity: 1;
   font-family: "GothamProMedium";

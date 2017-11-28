@@ -364,31 +364,31 @@ header
 			color: #fff
 			&:hover 
 				text-decoration: underline
-#feedback
+#feedback-1
 	color: #fff
-	textarea 
-		width: 100%
-		font-size: 14px
-		border: 1px solid #fff
-		background-color: transparent
-		padding: 12px 20px
-		display: inline-block
-		resize: none
-		overflow: auto
-		+medium
-		&:focus 
-			border: 1px solid $light
-	.form-ent,select
-		width: 100%
-		font-size: 14px
-		border: 1px solid #fff
-		background-color: transparent
-		padding: 12px 20px
-		display: inline-block
-		+medium
-		outline: none
-		&:focus 
-			border: 1px solid $light
+textarea 
+	width: 100%
+	font-size: 14px
+	border: 1px solid #fff
+	background-color: transparent
+	padding: 12px 20px
+	display: inline-block
+	resize: none
+	overflow: auto
+	+medium
+	&:focus 
+		border: 1px solid $light
+.form-ent,select
+	width: 100%
+	font-size: 14px
+	border: 1px solid #fff
+	background-color: transparent
+	padding: 12px 20px
+	display: inline-block
+	+medium
+	outline: none
+	&:focus 
+		border: 1px solid $light
 .contact-btn 
 	+common-button
 	+medium
@@ -406,7 +406,7 @@ header
 	&:last-child 
 		float: right
 /*========== Modal ==========*/
-#pans-modal #feedback
+#pans-modal #feedback-2
 	color: $dark
 	display: inline-block
 	width: 100%
@@ -417,6 +417,7 @@ header
 	.form-ent,select
 		color: $dark
 		border: 1px solid  $light
+		+medium
 		&:focus 
 			border: 1px solid $dark
 	.contact-btn

@@ -444,31 +444,33 @@ header {
       #contacts .budge a:hover {
         text-decoration: underline; }
 
-#feedback {
+#feedback-1 {
   color: #fff; }
-  #feedback textarea {
-    width: 100%;
-    font-size: 14px;
-    border: 1px solid #fff;
-    background-color: transparent;
-    padding: 12px 20px;
-    display: inline-block;
-    resize: none;
-    overflow: auto;
-    font-family: "GothamProMedium"; }
-    #feedback textarea:focus {
-      border: 1px solid #999; }
-  #feedback .form-ent, #feedback select {
-    width: 100%;
-    font-size: 14px;
-    border: 1px solid #fff;
-    background-color: transparent;
-    padding: 12px 20px;
-    display: inline-block;
-    font-family: "GothamProMedium";
-    outline: none; }
-    #feedback .form-ent:focus, #feedback select:focus {
-      border: 1px solid #999; }
+
+textarea {
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 12px 20px;
+  display: inline-block;
+  resize: none;
+  overflow: auto;
+  font-family: "GothamProMedium"; }
+  textarea:focus {
+    border: 1px solid #999; }
+
+.form-ent, select {
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 12px 20px;
+  display: inline-block;
+  font-family: "GothamProMedium";
+  outline: none; }
+  .form-ent:focus, select:focus {
+    border: 1px solid #999; }
 
 .contact-btn {
   font-size: 13px;
@@ -492,25 +494,26 @@ header {
     float: right; }
 
 /*========== Modal ==========*/
-#pans-modal #feedback {
+#pans-modal #feedback-2 {
   color: #222;
   display: inline-block;
   width: 100%; }
-  #pans-modal #feedback textarea {
+  #pans-modal #feedback-2 textarea {
     border: 1px solid #999; }
-    #pans-modal #feedback textarea:focus {
+    #pans-modal #feedback-2 textarea:focus {
       border: 1px solid #222; }
-  #pans-modal #feedback .form-ent, #pans-modal #feedback select {
+  #pans-modal #feedback-2 .form-ent, #pans-modal #feedback-2 select {
     color: #222;
-    border: 1px solid #999; }
-    #pans-modal #feedback .form-ent:focus, #pans-modal #feedback select:focus {
+    border: 1px solid #999;
+    font-family: "GothamProMedium"; }
+    #pans-modal #feedback-2 .form-ent:focus, #pans-modal #feedback-2 select:focus {
       border: 1px solid #222; }
-  #pans-modal #feedback .contact-btn {
+  #pans-modal #feedback-2 .contact-btn {
     border-color: #222;
     margin: 0 0 0 10px;
     float: right;
     color: #222; }
-    #pans-modal #feedback .contact-btn:hover {
+    #pans-modal #feedback-2 .contact-btn:hover {
       -webkit-transition: all .25s;
       -o-transition: all .25s;
       transition: all .25s;
