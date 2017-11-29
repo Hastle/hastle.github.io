@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	new WOW().init();
 
-	$("#feedback-1, #feedback-2").submit(function() {
+	$("#feedback-2").submit(function() {
 		var captcha = grecaptcha.getResponse();
 		if (captcha.length == 0) {
 			alert("Не пройдена captcha, попробуйте еще раз.")

@@ -63,25 +63,47 @@
   font-family: "GothamProMedium";
 }
 
-#pans-modal ::-webkit-input-placeholder {
+#feedback-1 ::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+  font-family: "GothamProMedium";
+}
+
+#feedback-2 :focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+#feedback-2 :focus::-moz-placeholder {
+  color: transparent;
+}
+
+#feedback-2 :focus:-moz-placeholder {
+  color: transparent;
+}
+
+#feedback-2 :focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+#feedback-2 ::-webkit-input-placeholder {
   color: #222;
   opacity: 1;
   font-family: "GothamProMedium";
 }
 
-#pans-modal :-moz-placeholder {
+#feedback-2 :-moz-placeholder {
   color: #222;
   opacity: 1;
   font-family: "GothamProMedium";
 }
 
-#pans-modal ::-moz-placeholder {
+#feedback-2 ::-moz-placeholder {
   color: #222;
   opacity: 1;
   font-family: "GothamProMedium";
 }
 
-#pans-modal :-ms-input-placeholder {
+#feedback-2 :-ms-input-placeholder {
   color: #222;
   opacity: 1;
   font-family: "GothamProMedium";

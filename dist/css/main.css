@@ -499,7 +499,8 @@ textarea {
   display: inline-block;
   width: 100%; }
   #pans-modal #feedback-2 textarea {
-    border: 1px solid #999; }
+    border: 1px solid #999;
+    font-family: "GothamProMedium"; }
     #pans-modal #feedback-2 textarea:focus {
       border: 1px solid #222; }
   #pans-modal #feedback-2 .form-ent, #pans-modal #feedback-2 select {
