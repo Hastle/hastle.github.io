@@ -240,7 +240,7 @@
 							<textarea type="text" placeholder="Сообщение" rows="13" name="text" required></textarea>
 						</div>
 						<div class="captch-block">
-							<div id="recaptcha1"></div>
+							<div id="captcha1"></div>
 						</div>
 						<button class="contact-btn" type="reset">Отчистить</button>
 						<button class="contact-btn" type="submit">Отправить</button>
@@ -251,7 +251,7 @@
 		</div>
 	</section>
 	<!--======== Magnific Popup ========-->
-	<div id="pans-modal" class="white-popup-block mfp-hide">
+	<div id="pans-modal" class="white-popup-block mfp-hide text-right">
 		<form id="feedback-2">
 			<div class="form-group">
 				<input class="form-ent" type="text" placeholder="Ваше имя" name="name" required>
@@ -274,30 +274,15 @@
 				<textarea type="text" placeholder="Сообщение" rows="13" name="text"></textarea>
 			</div>
 			<div class="captch-block">
-				<div id="recaptcha2"></div>
+				<div id="captcha2"></div>
 			</div>
-			<button class="contact-btn" type="submit">Отправить</button>
 			<button class="contact-btn" type="reset">Отчистить</button>
+			<button class="contact-btn" type="submit">Отправить</button>
 		</form>
 	</div>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
-	<script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit" async defer></script>
-	<script>
-		var recaptcha1;
-		var recaptcha2;
-		var myCallBack = function() {
-			recaptcha1 = grecaptcha.render('recaptcha1', {
-				'sitekey' : '6LebTzoUAAAAAGEMNnMUJGpqJfvq0YFps09CvmsR',
-				'theme' : 'dark'
-			});
-			recaptcha2 = grecaptcha.render('recaptcha2', {
-				'sitekey' : '6LebTzoUAAAAAGEMNnMUJGpqJfvq0YFps09CvmsR',
-				'theme' : 'light'
-			});
-
-		};
-	</script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onLoadHandler&render=explicit"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>

@@ -239,8 +239,11 @@
 						<div class="form-group">
 							<textarea type="text" placeholder="Сообщение" rows="13" name="text" required></textarea>
 						</div>
+						<div class="captch-block">
+							<div id="captcha1"></div>
+						</div>
 						<button class="contact-btn" type="reset">Отчистить</button>
-						<button class="contact-btn" href="">Отправить</button>
+						<button class="contact-btn" type="submit">Отправить</button>
 					</form>
 				</div>
 				<div class="info"><p>© 2015-2017 Eger-Web</p></div>
@@ -248,7 +251,7 @@
 		</div>
 	</section>
 	<!--======== Magnific Popup ========-->
-	<div id="pans-modal" class="white-popup-block mfp-hide">
+	<div id="pans-modal" class="white-popup-block mfp-hide text-right">
 		<form id="feedback-2">
 			<div class="form-group">
 				<input class="form-ent" type="text" placeholder="Ваше имя" name="name" required>
@@ -271,14 +274,15 @@
 				<textarea type="text" placeholder="Сообщение" rows="13" name="text"></textarea>
 			</div>
 			<div class="captch-block">
-				<div class="g-recaptcha" data-sitekey="6LebTzoUAAAAAGEMNnMUJGpqJfvq0YFps09CvmsR"></div>
+				<div id="captcha2"></div>
 			</div>
-			<button class="contact-btn" href="">Отправить</button>
 			<button class="contact-btn" type="reset">Отчистить</button>
+			<button class="contact-btn" type="submit">Отправить</button>
 		</form>
 	</div>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onLoadHandler&render=explicit"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>

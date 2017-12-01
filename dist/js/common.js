@@ -1,8 +1,18 @@
+var onLoadHandler = function() {
+	var captcha1 = grecaptcha.render('captcha1', {
+		'sitekey' : '6LebTzoUAAAAAGEMNnMUJGpqJfvq0YFps09CvmsR', 
+		'theme' : 'dark'
+	});
+	var captcha2 = grecaptcha.render('captcha2', {
+		'sitekey' : '6LebTzoUAAAAAGEMNnMUJGpqJfvq0YFps09CvmsR', 
+	});
+}
+
 $(document).ready(function() {
 
 	new WOW().init();
 
-	$("#feedback-2").submit(function() {
+	$("#feedback-1,#feedback-2").submit(function() {
 		var captcha = grecaptcha.getResponse();
 		if (captcha.length == 0) {
 			alert("Не пройдена captcha, попробуйте еще раз.")
@@ -10,10 +20,12 @@ $(document).ready(function() {
 			$.ajax({
 				type: "GET",
 				url: "mail.php",
-				data: $("form").serialize()
+				data: $(this).serialize()
 			}).done(function() {
 				$.magnificPopup.close();
 				alert("Ваше сообщение успешно отправено!");
+				$('#feedback-1')[0].reset();
+				grecaptcha.reset();
 				setTimeout(function() {
 					$.fancybox.close();
 				}, 1000);

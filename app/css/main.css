@@ -412,7 +412,7 @@ header {
   #contacts h3 {
     color: #fff; }
   #contacts .row {
-    padding: 150px 0; }
+    padding: 100px 0; }
   #contacts .info {
     position: absolute;
     display: inline-block;
@@ -494,27 +494,27 @@ textarea {
     float: right; }
 
 /*========== Modal ==========*/
-#pans-modal #feedback-2 {
+#feedback-2 {
   color: #222;
   display: inline-block;
   width: 100%; }
-  #pans-modal #feedback-2 textarea {
+  #feedback-2 textarea {
     border: 1px solid #999;
     font-family: "GothamProMedium"; }
-    #pans-modal #feedback-2 textarea:focus {
+    #feedback-2 textarea:focus {
       border: 1px solid #222; }
-  #pans-modal #feedback-2 .form-ent, #pans-modal #feedback-2 select {
+  #feedback-2 .form-ent, #feedback-2 select {
     color: #222;
     border: 1px solid #999;
     font-family: "GothamProMedium"; }
-    #pans-modal #feedback-2 .form-ent:focus, #pans-modal #feedback-2 select:focus {
+    #feedback-2 .form-ent:focus, #feedback-2 select:focus {
       border: 1px solid #222; }
-  #pans-modal #feedback-2 .contact-btn {
+  #feedback-2 .contact-btn {
     border-color: #222;
     margin: 0 0 0 10px;
-    float: right;
-    color: #222; }
-    #pans-modal #feedback-2 .contact-btn:hover {
+    color: #222;
+    float: none; }
+    #feedback-2 .contact-btn:hover {
       -webkit-transition: all .25s;
       -o-transition: all .25s;
       transition: all .25s;
@@ -525,7 +525,6 @@ textarea {
 .white-popup-block {
   background: #FFF;
   padding: 50px;
-  text-align: left;
   max-width: 650px;
   margin: 40px auto;
   position: relative; }

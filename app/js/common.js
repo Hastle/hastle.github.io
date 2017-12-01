@@ -1,3 +1,13 @@
+var onLoadHandler = function() {
+	var captcha1 = grecaptcha.render('captcha1', {
+		'sitekey' : '6LebTzoUAAAAAGEMNnMUJGpqJfvq0YFps09CvmsR', 
+		'theme' : 'dark'
+	});
+	var captcha2 = grecaptcha.render('captcha2', {
+		'sitekey' : '6LebTzoUAAAAAGEMNnMUJGpqJfvq0YFps09CvmsR', 
+	});
+}
+
 $(document).ready(function() {
 
 	new WOW().init();
@@ -15,6 +25,7 @@ $(document).ready(function() {
 				$.magnificPopup.close();
 				alert("Ваше сообщение успешно отправено!");
 				$('#feedback-1')[0].reset();
+				grecaptcha.reset();
 				setTimeout(function() {
 					$.fancybox.close();
 				}, 1000);
