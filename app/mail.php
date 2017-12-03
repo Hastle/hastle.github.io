@@ -1,7 +1,6 @@
 <?php
 
 $secret = "6LebTzoUAAAAAJygZe56iDucOK4SHeoUbh6c1XvZ";
-
 $recepient = "host@eger-web.ga";
 $sitename = "eger-web.ga";
 

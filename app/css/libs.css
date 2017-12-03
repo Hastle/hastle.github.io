@@ -91,7 +91,6 @@ code, kbd, pre, samp {
 
 button, input, optgroup, select, textarea {
   color: inherit;
-  font: inherit;
   margin: 0; }
 
 button {
@@ -4160,8 +4159,6 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif;
-  /* 1 */
   font-size: 100%;
   /* 1 */
   line-height: 1.15;
