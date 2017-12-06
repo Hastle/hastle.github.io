@@ -1,11 +1,10 @@
 var onLoadHandler = function() {
-	var captcha1 = grecaptcha.render('captcha1', {
+	captcha1 = grecaptcha.render('captcha1', {
 		'sitekey' : '6LebTzoUAAAAAGEMNnMUJGpqJfvq0YFps09CvmsR', 
 		'theme' : 'dark'
 	});
-	var captcha2 = grecaptcha.render('captcha2', {
+	captcha2 = grecaptcha.render('captcha2', {
 		'sitekey' : '6LebTzoUAAAAAGEMNnMUJGpqJfvq0YFps09CvmsR', 
-		'theme' : 'light'
 	});
 }
 
@@ -14,9 +13,10 @@ $(document).ready(function() {
 	new WOW().init();
 
 	$("#feedback-1,#feedback-2").submit(function() {
-		var response = grecaptcha.getResponse();
-		if(response.length == 0) {
-			alert("Не пройдена captcha, попробуйте еще раз.");
+		var response1 = grecaptcha.getResponse(captcha1);
+		var response2 = grecaptcha.getResponse(captcha2);
+		if (response1.length == response2.length) {
+			alert("Не пройдена captcha, попробуйте еще раз.")
 		} else {
 			$.ajax({
 				type: "GET",
@@ -25,7 +25,7 @@ $(document).ready(function() {
 			}).done(function() {
 				$.magnificPopup.close();
 				alert("Ваше сообщение успешно отправено!");
-				$('#feedback-1,#feedback-2')[0].reset();
+				$("#feedback-1,#feedback-2")[0].reset();
 				grecaptcha.reset();
 				setTimeout(function() {
 					$.fancybox.close();
@@ -33,6 +33,11 @@ $(document).ready(function() {
 			});
 		}
 		return false;
+	});
+
+	$(".contact-btn[type='reset']").click(function() {
+		grecaptcha.reset(captcha1);
+		grecaptcha.reset(captcha2);
 	});
 
 	$(".phone").mask("+7(000)000-00-00", {
