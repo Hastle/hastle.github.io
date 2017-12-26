@@ -1,16 +1,17 @@
 var gulp = require('gulp'),
-	sass = require('gulp-sass'),
-	browserSync = require('browser-sync'),
-	concat = require('gulp-concat'),
-	uglify = require('gulp-uglify'),
-	cssnano = require('gulp-cssnano'),
-	rename = require('gulp-rename'),
-	del = require('del'),
-	imagemin = require('gulp-imagemin'),
-	pngquant = require('imagemin-pngquant'),
-	cache = require('gulp-cache'),
-	autoprefixer = require('gulp-autoprefixer');
-	sourcemaps = require('gulp-sourcemaps');
+sass = require('gulp-sass'),
+browserSync = require('browser-sync'),
+concat = require('gulp-concat'),
+uglify = require('gulp-uglify'),
+cssnano = require('gulp-cssnano'),
+rename = require('gulp-rename'),
+del = require('del'),
+imagemin = require('gulp-imagemin'),
+imageminJpegRecompress = require('imagemin-jpeg-recompress'),
+pngquant = require('imagemin-pngquant'),
+cache = require('gulp-cache'),
+autoprefixer = require('gulp-autoprefixer');
+sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('default', ['watch']);
 
@@ -27,20 +28,20 @@ gulp.task('sass', function(){
 });
 
 var jsfiles = [
-	'app/libs/jquery/jquery-1.11.1.min.js',
-	'app/libs/bootstrap/bootstrap.min.js',
-	'app/libs/parallax/parallax.min.js',
-	'app/libs/page-scroll2id/jquery.malihu.PageScroll2id.js',
-	'app/libs/wow/wow.js',
-	'app/libs/jquery-mask-plugin/src/jquery.mask.js',
-	'app/libs/magnific-popup/jquery.magnific-popup.min.js',
-	'app/libs/waypoints/waypoints-1.6.2.min.js'
+'app/libs/jquery/jquery-1.11.1.min.js',
+'app/libs/bootstrap/bootstrap.min.js',
+'app/libs/parallax/parallax.min.js',
+'app/libs/page-scroll2id/jquery.malihu.PageScroll2id.js',
+'app/libs/wow/wow.js',
+'app/libs/jquery-mask-plugin/src/jquery.mask.js',
+'app/libs/magnific-popup/jquery.magnific-popup.min.js',
+'app/libs/waypoints/waypoints-1.6.2.min.js'
 ];
 
 gulp.task('scripts', function () {
 	return gulp.src(jsfiles, {base: 'app/libs'})
-		.pipe(concat('libs.min.js'))
-		.pipe(gulp.dest('app/js'));
+	.pipe(concat('libs.min.js'))
+	.pipe(gulp.dest('app/js'));
 });
 
 gulp.task('css-libs', ['sass'], function() {
@@ -61,14 +62,23 @@ gulp.task('browser-sync', function() {
 
 gulp.task('img', function() {
 	return gulp.src('app/img/**/*')
-		.pipe(cache(imagemin({
-		interlaced: true,
-		progressive: true,
-			svgoPlugins: [{removeViewBox: false}],
-			use: [pngquant()]
+	.pipe(cache(imagemin([
+		imagemin.gifsicle({interlaced: true}),
+		imagemin.jpegtran({progressive: true}),
+		imageminJpegRecompress({
+			loops: 5,
+			min: 65,
+			max: 70,
+			quality:'medium'
+		}),
+		imagemin.svgo(),
+		imagemin.optipng({optimizationLevel: 3}),
+		pngquant({quality: '65-70', speed: 5})
+		],{
+			verbose: true
 		})))
-		.pipe(gulp.dest('dist/img'));
-	});
+	.pipe(gulp.dest('dist/img'));
+});
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
 	gulp.watch('app/sass/**/*.sass', ['sass']);
