@@ -4,6 +4,7 @@ browserSync = require('browser-sync'),
 concat = require('gulp-concat'),
 uglify = require('gulp-uglify'),
 cssnano = require('gulp-cssnano'),
+minifycss = require('gulp-minify-css'),
 rename = require('gulp-rename'),
 del = require('del'),
 imagemin = require('gulp-imagemin'),
@@ -44,11 +45,15 @@ gulp.task('scripts', function () {
 	.pipe(gulp.dest('app/js'));
 });
 
-gulp.task('css-libs', ['sass'], function() {
-	return gulp.src('app/css/libs.css')
-	.pipe(cssnano())
-	.pipe(rename({suffix: '.min'}))
-	.pipe(gulp.dest('app/css'));
+gulp.task('minify-css', function() {
+	return gulp.src([
+		'app/css/*.css',
+		'!app/css/media.css',
+		'!app/css/animate.css',
+		'!app/css/libs.css',
+		])
+	.pipe(minifycss())
+	.pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('browser-sync', function() {
@@ -97,19 +102,18 @@ gulp.task('clear', function() {
 	return cache.clearAll();
 });
 
-gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
-	var buildCss = gulp.src([
-		'app/css/*',
-		'!app/css/libs.css',
-		'!app/css/animate.css'
-		])
-	.pipe(gulp.dest('dist/css'))
-
+gulp.task('build', ['clean', 'img', 'sass', 'minify-css', 'scripts'], function() {
 	var buildFonts = gulp.src('app/fonts/**/*')
 	.pipe(gulp.dest('dist/fonts'))
 
 	var buildJs = gulp.src('app/js/**/*')
 	.pipe(gulp.dest('dist/js'))
+
+	var buildOther = gulp.src('app/*.php')
+	.pipe(gulp.dest('dist'))
+
+	var buildHtaccess = gulp.src('app/.htaccess')
+	.pipe(gulp.dest('dist'))
 
 	var buildHtml = gulp.src('app/**/*.html')
 	.pipe(gulp.dest('dist'));
