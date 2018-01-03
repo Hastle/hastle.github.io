@@ -117,4 +117,4 @@ gulp.task('build', ['clean', 'img', 'sass', 'minify-css', 'scripts'], function()
 
 	var buildHtml = gulp.src('app/**/*.html')
 	.pipe(gulp.dest('dist'));
-});
+}); 
