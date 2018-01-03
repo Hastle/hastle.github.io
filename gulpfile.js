@@ -45,6 +45,13 @@ gulp.task('scripts', function () {
 	.pipe(gulp.dest('app/js'));
 });
 
+gulp.task('css-libs', ['sass'], function() { 
+	return gulp.src('app/css/libs.css') 
+	.pipe(cssnano()) 
+	.pipe(rename({suffix: '.min'})) 
+	.pipe(gulp.dest('app/css')); 
+});
+
 gulp.task('minify-css', function() {
 	return gulp.src([
 		'app/css/*.css',
@@ -117,4 +124,4 @@ gulp.task('build', ['clean', 'img', 'sass', 'minify-css', 'scripts'], function()
 
 	var buildHtml = gulp.src('app/**/*.html')
 	.pipe(gulp.dest('dist'));
-}); 
+});
