@@ -11,7 +11,7 @@ imagemin = require('gulp-imagemin'),
 imageminJpegRecompress = require('imagemin-jpeg-recompress'),
 pngquant = require('imagemin-pngquant'),
 cache = require('gulp-cache'),
-autoprefixer = require('gulp-autoprefixer');
+autoprefixer = require('gulp-autoprefixer'),
 sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('default', ['watch']);
