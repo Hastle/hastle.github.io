@@ -30,12 +30,10 @@ gulp.task('sass', function(){
 
 var jsfiles = [
 'app/libs/jquery/jquery-1.11.1.min.js',
-'app/libs/bootstrap/bootstrap.min.js',
 'app/libs/parallax/parallax.min.js',
 'app/libs/page-scroll2id/jquery.malihu.PageScroll2id.js',
 'app/libs/wow/wow.js',
-'app/libs/jquery-mask-plugin/src/jquery.mask.js',
-'app/libs/magnific-popup/jquery.magnific-popup.min.js',
+'app/libs/slick/slick.min.js',
 'app/libs/waypoints/waypoints-1.6.2.min.js'
 ];
 
@@ -109,7 +107,14 @@ gulp.task('clear', function() {
 	return cache.clearAll();
 });
 
-gulp.task('build', ['clean', 'img', 'sass', 'minify-css', 'scripts'], function() {
+gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
+	var buildCss = gulp.src([
+		'app/css/*',
+		'!app/css/libs.css',
+		'!app/css/animate.css'
+		])
+	.pipe(gulp.dest('dist/css'))
+	
 	var buildFonts = gulp.src('app/fonts/**/*')
 	.pipe(gulp.dest('dist/fonts'))
 
