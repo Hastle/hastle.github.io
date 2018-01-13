@@ -457,9 +457,64 @@ textarea {
   display: inline-block;
   resize: none;
   overflow: auto;
-  font-family: "GothamProMedium"; }
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+  font-family: "GothamProMedium";
+  outline: none; }
+  textarea::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 1;
+    font-family: "GothamProMedium";
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
+  textarea:-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+    font-family: "GothamProMedium";
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
+  textarea::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+    font-family: "GothamProMedium";
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
+  textarea:-ms-input-placeholder {
+    color: #fff;
+    opacity: 1;
+    font-family: "GothamProMedium";
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
   textarea:focus {
-    border: 1px solid #999; }
+    border: 1px solid #999;
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
+    textarea:focus::-webkit-input-placeholder {
+      color: transparent;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+    textarea:focus:-moz-placeholder {
+      color: transparent;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+    textarea:focus::-moz-placeholder {
+      color: transparent;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+    textarea:focus:-ms-input-placeholder {
+      color: transparent;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
 
 .form-ent, select {
   width: 100%;
@@ -468,10 +523,64 @@ textarea {
   background-color: transparent;
   padding: 12px 20px;
   display: inline-block;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
   font-family: "GothamProMedium";
   outline: none; }
+  .form-ent::-webkit-input-placeholder, select::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 1;
+    font-family: "GothamProMedium";
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
+  .form-ent:-moz-placeholder, select:-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+    font-family: "GothamProMedium";
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
+  .form-ent::-moz-placeholder, select::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+    font-family: "GothamProMedium";
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
+  .form-ent:-ms-input-placeholder, select:-ms-input-placeholder {
+    color: #fff;
+    opacity: 1;
+    font-family: "GothamProMedium";
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
   .form-ent:focus, select:focus {
-    border: 1px solid #999; }
+    border: 1px solid #999;
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
+    .form-ent:focus::-webkit-input-placeholder, select:focus::-webkit-input-placeholder {
+      color: transparent;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+    .form-ent:focus:-moz-placeholder, select:focus:-moz-placeholder {
+      color: transparent;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+    .form-ent:focus::-moz-placeholder, select:focus::-moz-placeholder {
+      color: transparent;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+    .form-ent:focus:-ms-input-placeholder, select:focus:-ms-input-placeholder {
+      color: transparent;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
 
 .contact-btn {
   font-size: 13px;

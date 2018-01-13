@@ -4,6 +4,8 @@
 	-webkit-transition: all .25s
 	-o-transition: all .25s 
 	transition: all .25s
+=flow-ext($sec)
+	transition: all $sec
 =common-button
 	font-size: 13px
 	padding: 20px 53px
@@ -18,6 +20,15 @@
 	font-family: "GothamProItalic"
 =karring
 	letter-spacing: .20454545em
+=placeholder
+	&::-webkit-input-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&:-ms-input-placeholder
+		@content
 =light-shadow
 	box-shadow: 0 0 10px 2.4px rgba(32, 32, 32, 0.1)
 =bold-shadow

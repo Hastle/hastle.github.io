@@ -374,9 +374,20 @@ textarea
 	display: inline-block
 	resize: none
 	overflow: auto
+	+flow
+	+placeholder
+		color: #fff
+		opacity: 1
+		+medium
+		+flow
 	+medium
+	outline: none
 	&:focus 
 		border: 1px solid $light
+		+flow
+		+placeholder
+			color: transparent
+			+flow
 .form-ent,select
 	width: 100%
 	font-size: 14px
@@ -384,10 +395,20 @@ textarea
 	background-color: transparent
 	padding: 12px 20px
 	display: inline-block
+	+flow
+	+placeholder
+		color: #fff
+		opacity: 1
+		+medium
+		+flow
 	+medium
 	outline: none
 	&:focus 
 		border: 1px solid $light
+		+flow
+		+placeholder
+			color: transparent
+			+flow
 .contact-btn 
 	+common-button
 	+medium
