@@ -425,7 +425,10 @@ header {
     width: 100%;
     border: 1px solid #fff;
     padding: 20px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
     #contacts .budge:hover {
       border: 1px solid #999;
       -webkit-transition: all .25s;
@@ -610,15 +613,127 @@ textarea {
   width: 100%; }
   #feedback-2 textarea {
     border: 1px solid #999;
-    font-family: "GothamProMedium"; }
+    font-family: "GothamProMedium";
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+    font-family: "GothamProMedium";
+    outline: none; }
+    #feedback-2 textarea::-webkit-input-placeholder {
+      color: #222;
+      opacity: 1;
+      font-family: "GothamProMedium";
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+    #feedback-2 textarea:-moz-placeholder {
+      color: #222;
+      opacity: 1;
+      font-family: "GothamProMedium";
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+    #feedback-2 textarea::-moz-placeholder {
+      color: #222;
+      opacity: 1;
+      font-family: "GothamProMedium";
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+    #feedback-2 textarea:-ms-input-placeholder {
+      color: #222;
+      opacity: 1;
+      font-family: "GothamProMedium";
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
     #feedback-2 textarea:focus {
-      border: 1px solid #222; }
+      border: 1px solid #999;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+      #feedback-2 textarea:focus::-webkit-input-placeholder {
+        color: transparent;
+        -webkit-transition: all .25s;
+        -o-transition: all .25s;
+        transition: all .25s; }
+      #feedback-2 textarea:focus:-moz-placeholder {
+        color: transparent;
+        -webkit-transition: all .25s;
+        -o-transition: all .25s;
+        transition: all .25s; }
+      #feedback-2 textarea:focus::-moz-placeholder {
+        color: transparent;
+        -webkit-transition: all .25s;
+        -o-transition: all .25s;
+        transition: all .25s; }
+      #feedback-2 textarea:focus:-ms-input-placeholder {
+        color: transparent;
+        -webkit-transition: all .25s;
+        -o-transition: all .25s;
+        transition: all .25s; }
   #feedback-2 .form-ent, #feedback-2 select {
     color: #222;
     border: 1px solid #999;
-    font-family: "GothamProMedium"; }
+    font-family: "GothamProMedium";
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+    font-family: "GothamProMedium";
+    outline: none; }
+    #feedback-2 .form-ent::-webkit-input-placeholder, #feedback-2 select::-webkit-input-placeholder {
+      color: #222;
+      opacity: 1;
+      font-family: "GothamProMedium";
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+    #feedback-2 .form-ent:-moz-placeholder, #feedback-2 select:-moz-placeholder {
+      color: #222;
+      opacity: 1;
+      font-family: "GothamProMedium";
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+    #feedback-2 .form-ent::-moz-placeholder, #feedback-2 select::-moz-placeholder {
+      color: #222;
+      opacity: 1;
+      font-family: "GothamProMedium";
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+    #feedback-2 .form-ent:-ms-input-placeholder, #feedback-2 select:-ms-input-placeholder {
+      color: #222;
+      opacity: 1;
+      font-family: "GothamProMedium";
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
     #feedback-2 .form-ent:focus, #feedback-2 select:focus {
-      border: 1px solid #222; }
+      border: 1px solid #999;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+      #feedback-2 .form-ent:focus::-webkit-input-placeholder, #feedback-2 select:focus::-webkit-input-placeholder {
+        color: transparent;
+        -webkit-transition: all .25s;
+        -o-transition: all .25s;
+        transition: all .25s; }
+      #feedback-2 .form-ent:focus:-moz-placeholder, #feedback-2 select:focus:-moz-placeholder {
+        color: transparent;
+        -webkit-transition: all .25s;
+        -o-transition: all .25s;
+        transition: all .25s; }
+      #feedback-2 .form-ent:focus::-moz-placeholder, #feedback-2 select:focus::-moz-placeholder {
+        color: transparent;
+        -webkit-transition: all .25s;
+        -o-transition: all .25s;
+        transition: all .25s; }
+      #feedback-2 .form-ent:focus:-ms-input-placeholder, #feedback-2 select:focus:-ms-input-placeholder {
+        color: transparent;
+        -webkit-transition: all .25s;
+        -o-transition: all .25s;
+        transition: all .25s; }
   #feedback-2 .contact-btn {
     border-color: #222;
     margin: 0 0 0 10px;

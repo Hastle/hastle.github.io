@@ -349,6 +349,7 @@ header
 		border: 1px solid #fff
 		padding: 20px
 		margin-bottom: 10px
+		+flow
 		&:hover 
 			border: 1px solid $light
 			+flow
@@ -433,14 +434,38 @@ textarea
 	textarea
 		border: 1px solid  $light
 		+medium
+		+flow
+		+placeholder
+			color: $dark
+			opacity: 1
+			+medium
+			+flow
+		+medium
+		outline: none
 		&:focus 
-			border: 1px solid $dark
+			border: 1px solid $light
+			+flow
+			+placeholder
+				color: transparent
+				+flow	
 	.form-ent,select
 		color: $dark
 		border: 1px solid  $light
 		+medium
+		+flow
+		+placeholder
+			color: $dark
+			opacity: 1
+			+medium
+			+flow
+		+medium
+		outline: none
 		&:focus 
-			border: 1px solid $dark
+			border: 1px solid $light
+			+flow
+			+placeholder
+				color: transparent
+				+flow
 	.contact-btn
 		border-color: $dark
 		margin: 0 0 0 10px
