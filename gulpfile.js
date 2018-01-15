@@ -1,18 +1,16 @@
 var gulp = require('gulp'),
-sass = require('gulp-sass'),
-browserSync = require('browser-sync'),
-concat = require('gulp-concat'),
-uglify = require('gulp-uglify'),
-cssnano = require('gulp-cssnano'),
-minifycss = require('gulp-minify-css'),
-rename = require('gulp-rename'),
-del = require('del'),
-imagemin = require('gulp-imagemin'),
-imageminJpegRecompress = require('imagemin-jpeg-recompress'),
-pngquant = require('imagemin-pngquant'),
-cache = require('gulp-cache'),
-autoprefixer = require('gulp-autoprefixer'),
-sourcemaps = require('gulp-sourcemaps');
+	sass = require('gulp-sass'),
+	browserSync = require('browser-sync'),
+	concat = require('gulp-concat'),
+	cssnano = require('gulp-cssnano'),
+	minifycss = require('gulp-minify-css'),
+	rename = require('gulp-rename'),
+	del = require('del'),
+	imagemin = require('gulp-imagemin'),
+	imageminJpegRecompress = require('imagemin-jpeg-recompress'),
+	pngquant = require('imagemin-pngquant'),
+	cache = require('gulp-cache'),
+	autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('default', ['watch']);
 
