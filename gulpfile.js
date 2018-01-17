@@ -53,7 +53,6 @@ gulp.task('css-libs', ['sass'], function() {
 gulp.task('minify-css', function() {
 	return gulp.src([
 		'app/css/*.css',
-		'!app/css/media.css',
 		'!app/css/animate.css',
 		'!app/css/libs.css',
 		])
