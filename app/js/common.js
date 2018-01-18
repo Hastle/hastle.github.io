@@ -49,14 +49,6 @@ $(document).ready(function() {
 
 	$(".toggle_mnu").click(function() {
 		$(".sandwich").toggleClass("active");
-	});
-
-	$(".top_mnu ul a").click(function() {
-		$(".top_mnu").fadeOut(600);
-		$(".sandwich").toggleClass("active");
-	}).append("<span>");
-
-	$(".toggle_mnu").click(function() {
 		if ($(".top_mnu").is(":visible")) {
 			$(".top_mnu").fadeOut(600);
 			$(".top_mnu li a").removeClass("fadeInUp animated");
@@ -65,6 +57,11 @@ $(document).ready(function() {
 			$(".top_mnu li a").addClass("fadeInUp animated");
 		};
 	});
+
+	$(".top_mnu ul a").click(function() {
+		$(".top_mnu").fadeOut(600);
+		$(".sandwich").toggleClass("active");
+	}).append("<span>");
 
 	$('.popup-modal').magnificPopup({
 		type:'inline',
