@@ -58,7 +58,7 @@ $(document).ready(function() {
 		};
 	});
 
-	$(".top_mnu ul a").click(function() {
+	$(".top_mnu ul a,.soc-links a").click(function() {
 		$(".top_mnu").fadeOut(600);
 		$(".sandwich").toggleClass("active");
 	}).append("<span>");
