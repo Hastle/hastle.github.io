@@ -1,1 +1,1 @@
-#progress{background-color:#222}.offer{color:#aaa;border:1px solid #fff}#progress h3{color:#fff}.cards h4{color:#222}#portfolio .cards{background-color:#eee}h3,h4{color:#fff}#about li,#about ul{color:#aaa}#price,#price .ticket{background-color:#222}
+body{background:#222!important}#about,#portfolio,#price,#progress{background-color:#222}#portfolio .cards,.toggle_mnu{background-color:#333}.offer{color:#aaa;border:1px solid #fff}#portfolio a,#progress h3,.cards h4,h3,h4{color:#fff}#about li,#about ul{color:#aaa}#price,#price .ticket{background-color:#222}

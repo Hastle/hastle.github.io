@@ -3,6 +3,8 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html
+RewriteCond %{SERVER_PORT} !^443$ 
+RewriteRule ^(.*)$ https://eger-web.ga/$1 [R=301,L]
 
 <IfModule mod_expires.c>
 ExpiresActive On

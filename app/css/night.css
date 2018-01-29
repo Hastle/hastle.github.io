@@ -1,18 +1,27 @@
-#progress {
+body {
+	background: #222 !important;
+}
+#about,#progress,#portfolio,#price {
 	background-color: #222;
+}
+#portfolio .cards {
+    background-color: #333;
 }
 .offer {
 	color: #aaa;
 	border: 1px solid #fff;
 }
+.toggle_mnu {
+	background-color: #333;
+}
 #progress h3 {
 	color: #fff;
 }
-.cards h4 {
-	color: #222;
+.cards h4,#portfolio a {
+	color: #fff;
 }
 #portfolio .cards {
-	background-color: #eee;
+	background-color: #333;
 }
 h3,h4 {
 	color: #fff;
