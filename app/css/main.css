@@ -363,10 +363,20 @@ header {
     padding: 20px;
     margin: 15px 0;
     -webkit-box-shadow: 0 50px 60px 0 rgba(0, 0, 0, 0.25);
-            box-shadow: 0 50px 60px 0 rgba(0, 0, 0, 0.25); }
+            box-shadow: 0 50px 60px 0 rgba(0, 0, 0, 0.25);
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
     #price .ticket p {
       text-align: left;
       text-indent: 20px; }
+    #price .ticket:hover {
+      -webkit-transform: scale(1.02);
+          -ms-transform: scale(1.02);
+              transform: scale(1.02);
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
 
 /*========== Advantage ==========*/
 #advantage {
