@@ -63,6 +63,8 @@ $(document).ready(function() {
 		$(".sandwich").toggleClass("active");
 	}).append("<span>");
 
+	$(".toggle_mnu").addClass("fadeInRight animated");
+
 	$('.popup-modal').magnificPopup({
 		type:'inline',
 		midClick: true,
