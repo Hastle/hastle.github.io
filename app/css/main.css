@@ -314,17 +314,28 @@ p {
 /*========== Header ==========*/
 header {
   height: 100vh;
-  display: block; }
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center; }
   header h3 {
     font-family: "GothamProMedium"; }
   header h4 {
     color: #222;
     font-family: "GothamProItalic"; }
-  header .review {
-    position: relative;
-    top: 45%;
-    height: 54px;
-    margin: -27px 10px 0; }
 
 /*========== About ==========*/
 #about ul, #about li {
