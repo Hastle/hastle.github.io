@@ -1,10 +1,11 @@
 var onLoadHandler = function() {
 	captcha1 = grecaptcha.render('captcha1', {
-		'sitekey' : '6LebTzoUAAAAAGEMNnMUJGpqJfvq0YFps09CvmsR', 
-		'theme' : 'dark'
+		'sitekey': '6LebTzoUAAAAAGEMNnMUJGpqJfvq0YFps09CvmsR',
+		'theme': 'dark'
 	});
 	captcha2 = grecaptcha.render('captcha2', {
-		'sitekey' : '6LebTzoUAAAAAGEMNnMUJGpqJfvq0YFps09CvmsR', 
+		'sitekey' : '6LebTzoUAAAAAGEMNnMUJGpqJfvq0YFps09CvmsR',
+		'theme': 'light'
 	});
 }
 
