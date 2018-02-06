@@ -106,3 +106,7 @@ $(document).ready(function() {
 	});
 
 });
+
+$(window).on('scroll', function(){
+	$(".flow-content").css("right", "0");
+});

@@ -378,6 +378,9 @@ header {
     -webkit-transition: all .25s;
     -o-transition: all .25s;
     transition: all .25s; }
+    #price .ticket h4 {
+      margin-top: 5px;
+      margin-bottom: 5px; }
     #price .ticket p {
       text-align: left;
       text-indent: 20px; }
