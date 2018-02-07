@@ -433,7 +433,8 @@ header {
 
 /*========== Contacts ==========*/
 #contacts {
-  height: auto; }
+  height: auto;
+  overflow: hidden; }
   #contacts h3 {
     color: #fff; }
   #contacts .row {
