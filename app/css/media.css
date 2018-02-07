@@ -14,9 +14,9 @@
 #pans-modal #feedback-2 .contact-btn{float:left;padding:20px 27px;}
 }
 @media only screen and (max-width:480px){#advantage{padding:60px 30px;}
-.cards p{margin:0 5px;}
+.cards p{margin:0 10px;}
 #feedback-1{padding:0 15px;}
-#contacts #feedback-1 .contact-btn{padding:15px 30px;margin:10px 0;}
+#contacts #feedback-1 .contact-btn{padding:15px 25px;margin:10px 0;}
 #progress{padding-top:0;}
 #price .col-sm-4,#portfolio .col-sm-6{padding-left:0;padding-right:0;}
 .top_mnu ul{margin-top:150px !important;}
