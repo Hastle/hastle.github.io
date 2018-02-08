@@ -52,11 +52,10 @@ $(document).ready(function() {
 		$(".sandwich").toggleClass("active");
 		if ($(".top_mnu").is(":visible")) {
 			$(".top_mnu").fadeOut(600);
-			$(".top_mnu").removeClass("active");
 			$(".top_mnu li a").removeClass("fadeInUp animated");
 		} else {
 			$(".top_mnu").fadeIn(600);
-			$(".top_mnu").addClass("active");
+			$(".top_mnu").css("display", "flex");
 			$(".top_mnu li a").addClass("fadeInUp animated");
 		};
 	});
