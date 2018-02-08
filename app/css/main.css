@@ -236,12 +236,25 @@ p {
   right: 0;
   top: 0;
   display: none; }
+  .top_mnu.active {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .top_mnu ul {
-  margin-top: 180px !important;
-  text-align: center;
   -webkit-animation-duration: 0.01s;
-  animation-duration: 0.01s; }
+  animation-duration: 0.01s;
+  text-align: center;
+  width: 100%; }
 
 .top_mnu ul, .top_mnu li {
   list-style-type: none;
