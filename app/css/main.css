@@ -390,6 +390,8 @@ header {
     #price .ticket h4 {
       margin-top: 5px;
       margin-bottom: 5px; }
+      #price .ticket h4 span {
+        font-size: 20px; }
     #price .ticket p {
       text-align: left;
       text-indent: 20px; }
