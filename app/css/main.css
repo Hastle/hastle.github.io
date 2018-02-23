@@ -344,6 +344,8 @@ header {
   header h4 {
     color: #222;
     font-family: "GothamProItalic"; }
+  header .review {
+    padding: 0 10px; }
 
 /*========== About ==========*/
 #about ul, #about li {
