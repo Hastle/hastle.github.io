@@ -624,9 +624,7 @@ textarea {
       transition: all .25s; }
 
 select {
-  height: 38px;
-  -webkit-border-radius: 0;
-          border-radius: 0; }
+  height: 38px; }
 
 .contact-btn {
   font-size: 13px;
