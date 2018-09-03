@@ -2,5 +2,6 @@
 *.psd
 *.exe
 
+package-lock.json
 # Folders to ignore
 /node_modules/
