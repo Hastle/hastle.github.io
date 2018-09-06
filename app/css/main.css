@@ -414,7 +414,7 @@ header {
   #advantage .preset {
     display: inline-block;
     width: 100%;
-    padding-top: 100px; }
+    margin-top: 100px; }
 
 /*========== Portfolio ==========*/
 #portfolio {
@@ -450,7 +450,7 @@ header {
   #contacts h3 {
     color: #fff; }
   #contacts .row {
-    padding: 100px 0; }
+    margin: 100px 0; }
   #contacts .info {
     position: absolute;
     display: inline-block;
